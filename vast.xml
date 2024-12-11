@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <Ad id="heineken-ctv" sequence="1">
+        <InLine>
+            <AdSystem version="1.0">Heineken CTV Ad</AdSystem>
+            <AdTitle>Heineken Senna CTV</AdTitle>
+            <Description>Heineken Senna 30s CTV Ad</Description>
+            
+            <Creatives>
+                <Creative id="1" sequence="1">
+                    <Linear skipoffset="00:00:00">
+                        <Duration>00:00:30</Duration>
+                        <MediaFiles>
+                            <!-- Video Principal para CTV -->
+                            <MediaFile id="1" 
+                                     delivery="progressive" 
+                                     type="video/mp4" 
+                                     width="1920" 
+                                     height="1080" 
+                                     bitrate="4000" 
+                                     scalable="true" 
+                                     maintainAspectRatio="true"
+                                     apiFramework="VAST">
+                                <![CDATA[https://santiagoadsmood.github.io/heineken-ctv-kivi-dec-2024/HNK_SENNA_30S_16x9_YOUTUBE_1920x1080.mp4]]>
+                            </MediaFile>
+                            
+                            <!-- HTML5 Creative -->
+                            <MediaFile id="2" 
+                                     type="text/html" 
+                                     width="1920" 
+                                     height="1080">
+                                <![CDATA[https://santiagoadsmood.github.io/heineken-ctv-kivi-dec-2024/index.html]]>
+                            </MediaFile>
+                        </MediaFiles>
+                        
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[https://www.netflix.com/title/81068725]]>
+                            </ClickThrough>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
